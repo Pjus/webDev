@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Home from "./pages/Home";
+import Not from "./pages/Not";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="*" element={<Not />} />
+
             </Routes>
         </BrowserRouter>
     );
