@@ -136,7 +136,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 if 'runserver' in sys.argv:
-
+    print("local")
     # In local server,
     STATICFILES_DIRS = [
         BASE_DIR / 'static',
